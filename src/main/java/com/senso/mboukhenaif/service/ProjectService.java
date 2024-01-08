@@ -12,7 +12,7 @@ public interface ProjectService {
     ProjectDto getProject(final String projectId);
     void deleteProject(final String projectId) throws SensoException;
     List<ProjectDto> getAllProjects();
-    List<ProjectDto> getAllTheniveProjects();
+    List<ProjectDto> getAllActiveProjects();
     List<ProjectDto> getAllProjectsAssignedToUser(String userId);
     List<ProjectDto> getAllProjectsOfCategory(String categoryCode);
 }

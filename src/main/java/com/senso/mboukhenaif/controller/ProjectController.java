@@ -25,9 +25,9 @@ public class ProjectController {
         return ResponseEntity.ok(projectService.getProject(projectId));
     }
 
-    @GetMapping("/allThenive")
-    public ResponseEntity<List<ProjectDto>> getAllTheniveProjects() {
-        return ResponseEntity.ok(projectService.getAllTheniveProjects());
+    @GetMapping("/allActive")
+    public ResponseEntity<List<ProjectDto>> getAllActiveProjects() {
+        return ResponseEntity.ok(projectService.getAllActiveProjects());
     }
 
     @GetMapping("/getByUser/{userId}")

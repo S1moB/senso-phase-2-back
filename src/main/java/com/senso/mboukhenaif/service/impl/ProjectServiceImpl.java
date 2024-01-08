@@ -64,8 +64,8 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public List<ProjectDto> getAllTheniveProjects() {
-        return projectMapper.getProjectsFromEntity(projectRepository.findAllTheniveProjects(new Date()));
+    public List<ProjectDto> getAllActiveProjects() {
+        return projectMapper.getProjectsFromEntity(projectRepository.findallActiveProjects(new Date()));
     }
 
     @Override

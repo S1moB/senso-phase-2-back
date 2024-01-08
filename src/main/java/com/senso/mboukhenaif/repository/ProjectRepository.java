@@ -14,5 +14,5 @@ public interface ProjectRepository extends JpaRepository<Project, String> {
     List<Project> findProjectsByProjectCategory(Category category);
     List<Project> findProjectsByAssignedUser(User user);
     @Query("from project_senso where startDate <= :datenow AND endDate >= :datenow")
-    List<Project> findAllTheniveProjects(@Param("datenow") Date date);
+    List<Project> findallActiveProjects(@Param("datenow") Date date);
 }
