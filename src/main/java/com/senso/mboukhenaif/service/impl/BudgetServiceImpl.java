@@ -19,8 +19,8 @@ public class BudgetServiceImpl implements BudgetService {
         return budgetMapper.getBudgetsFromEntity(budgetRepository.findAll());
     }
     @Override
-    public BudgetDto saveBudget(BudgetDto BudgetDto) {
-        return budgetMapper.getBudgetFromEntity(budgetRepository.save(budgetMapper.getBudgetEntityFromDto(BudgetDto)));
+    public BudgetDto saveBudget(BudgetDto budgetDto) {
+        return budgetMapper.getBudgetFromEntity(budgetRepository.save(budgetMapper.getBudgetEntityFromDto(budgetDto)));
     }
     @Autowired
     public void setBudgetMapper(BudgetMapper budgetMapper) {

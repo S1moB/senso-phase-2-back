@@ -86,7 +86,6 @@ class ProjectServiceImplTest {
         var projectEntities = Collections.singletonList(new Project());
         var projectDtos = Collections.singletonList(new ProjectDto());
 
-
         // When
         when(projectRepository.findAll()).thenReturn(projectEntities);
         when(projectMapper.getProjectsFromEntity(projectEntities)).thenReturn(projectDtos);
